@@ -1,6 +1,4 @@
-import { Button, Image, Text } from "react-native";
-import * as Linking from "expo-linking";
-import { Section } from "../components/Section";
+import { Button, Text } from "react-native";
 import { Screen } from "../components/Screen";
 import React from "react";
 
@@ -12,9 +10,9 @@ type Props = {
 export const WelcomeScreen = ({ setStart }: Props) => {
 
   return (
-    <Screen>
+    <Screen style={{ marginTop: "10%", display:"flex", alignItems:'center' }}>
       <Text>Welcome</Text>
-      <Button onPress={() => setStart(true)} title="Start Playing"/>
+      <Button onPress={() => setStart(true)} title="Start Playing" />
     </Screen>
   );
 }
